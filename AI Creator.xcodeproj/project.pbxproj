@@ -49,6 +49,21 @@
 		CCB88AB32D3FDB2B0098027A /* AdvancedPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AB22D3FDB2B0098027A /* AdvancedPageControl.swift */; };
 		CCB88AB52D3FDB400098027A /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AB42D3FDB3C0098027A /* ColorUtils.swift */; };
 		CCB88AB72D3FDB450098027A /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AB62D3FDB430098027A /* Drawer.swift */; };
+		CCB88ABA2D412FCF0098027A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AB92D412FC90098027A /* PaymentViewController.swift */; };
+		CCB88ABC2D412FD60098027A /* PaymentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ABB2D412FD10098027A /* PaymentAssembly.swift */; };
+		CCB88ABE2D412FDC0098027A /* PaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ABD2D412FD90098027A /* PaymentRouter.swift */; };
+		CCB88AC12D4130A40098027A /* IconLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AC02D4130A00098027A /* IconLabelView.swift */; };
+		CCB88AC42D4131150098027A /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AC32D4131120098027A /* PaymentButton.swift */; };
+		CCB88ACA2D413D670098027A /* GeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AC92D413D610098027A /* GeneratorViewController.swift */; };
+		CCB88ACC2D413D6E0098027A /* GeneratorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ACB2D413D6A0098027A /* GeneratorAssembly.swift */; };
+		CCB88ACE2D413D750098027A /* GeneratorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ACD2D413D700098027A /* GeneratorRouter.swift */; };
+		CCB88AD02D413D7C0098027A /* EffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ACF2D413D780098027A /* EffectsViewController.swift */; };
+		CCB88AD22D413D840098027A /* EffectsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AD12D413D7F0098027A /* EffectsAssembly.swift */; };
+		CCB88AD42D413DF90098027A /* EffectsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AD32D413DF40098027A /* EffectsRouter.swift */; };
+		CCB88AD62D413E000098027A /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AD52D413DFC0098027A /* VideosViewController.swift */; };
+		CCB88AD82D413E060098027A /* VideosAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AD72D413E020098027A /* VideosAssembly.swift */; };
+		CCB88ADA2D413E0E0098027A /* VideosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AD92D413E080098027A /* VideosRouter.swift */; };
+		CCB88ADC2D413EA20098027A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ADB2D413E9C0098027A /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +104,21 @@
 		CCB88AB22D3FDB2B0098027A /* AdvancedPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPageControl.swift; sourceTree = "<group>"; };
 		CCB88AB42D3FDB3C0098027A /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		CCB88AB62D3FDB430098027A /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		CCB88AB92D412FC90098027A /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		CCB88ABB2D412FD10098027A /* PaymentAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAssembly.swift; sourceTree = "<group>"; };
+		CCB88ABD2D412FD90098027A /* PaymentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
+		CCB88AC02D4130A00098027A /* IconLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLabelView.swift; sourceTree = "<group>"; };
+		CCB88AC32D4131120098027A /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		CCB88AC92D413D610098027A /* GeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewController.swift; sourceTree = "<group>"; };
+		CCB88ACB2D413D6A0098027A /* GeneratorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorAssembly.swift; sourceTree = "<group>"; };
+		CCB88ACD2D413D700098027A /* GeneratorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorRouter.swift; sourceTree = "<group>"; };
+		CCB88ACF2D413D780098027A /* EffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsViewController.swift; sourceTree = "<group>"; };
+		CCB88AD12D413D7F0098027A /* EffectsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsAssembly.swift; sourceTree = "<group>"; };
+		CCB88AD32D413DF40098027A /* EffectsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsRouter.swift; sourceTree = "<group>"; };
+		CCB88AD52D413DFC0098027A /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		CCB88AD72D413E020098027A /* VideosAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosAssembly.swift; sourceTree = "<group>"; };
+		CCB88AD92D413E080098027A /* VideosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosRouter.swift; sourceTree = "<group>"; };
+		CCB88ADB2D413E9C0098027A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +200,11 @@
 		CC7A6F662D39338100064A5E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCB88AC82D413D5A0098027A /* Videos */,
+				CCB88AC72D413D550098027A /* Effects */,
+				CCB88AC62D413D4F0098027A /* Generator */,
+				CCB88AC52D413D480098027A /* TabBar */,
+				CCB88AB82D412FC40098027A /* Payment */,
 				CCB88AA72D3FD93B0098027A /* Onboarding */,
 				CC7A6F9C2D3935E800064A5E /* UntilOnboarding */,
 			);
@@ -203,6 +238,8 @@
 		CC7A6F692D39339100064A5E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CCB88AC22D41310C0098027A /* Payment */,
+				CCB88ABF2D41309C0098027A /* IconLabel */,
 				CCB88AB12D3FDB220098027A /* PageControl */,
 			);
 			path = Components;
@@ -272,6 +309,70 @@
 				CCB88AB62D3FDB430098027A /* Drawer.swift */,
 			);
 			path = PageControl;
+			sourceTree = "<group>";
+		};
+		CCB88AB82D412FC40098027A /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AB92D412FC90098027A /* PaymentViewController.swift */,
+				CCB88ABB2D412FD10098027A /* PaymentAssembly.swift */,
+				CCB88ABD2D412FD90098027A /* PaymentRouter.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		CCB88ABF2D41309C0098027A /* IconLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AC02D4130A00098027A /* IconLabelView.swift */,
+			);
+			path = IconLabel;
+			sourceTree = "<group>";
+		};
+		CCB88AC22D41310C0098027A /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AC32D4131120098027A /* PaymentButton.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		CCB88AC52D413D480098027A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88ADB2D413E9C0098027A /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CCB88AC62D413D4F0098027A /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AC92D413D610098027A /* GeneratorViewController.swift */,
+				CCB88ACB2D413D6A0098027A /* GeneratorAssembly.swift */,
+				CCB88ACD2D413D700098027A /* GeneratorRouter.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		CCB88AC72D413D550098027A /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88ACF2D413D780098027A /* EffectsViewController.swift */,
+				CCB88AD12D413D7F0098027A /* EffectsAssembly.swift */,
+				CCB88AD32D413DF40098027A /* EffectsRouter.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		CCB88AC82D413D5A0098027A /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AD52D413DFC0098027A /* VideosViewController.swift */,
+				CCB88AD72D413E020098027A /* VideosAssembly.swift */,
+				CCB88AD92D413E080098027A /* VideosRouter.swift */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,24 +477,39 @@
 				CC7A6FA52D39362100064A5E /* TableView.swift in Sources */,
 				CC7A6FA22D39360700064A5E /* UntilOnboardingAssembly.swift in Sources */,
 				CC7A6F512D3932D400064A5E /* AppDelegate.swift in Sources */,
+				CCB88AD02D413D7C0098027A /* EffectsViewController.swift in Sources */,
 				CC7A6F9B2D3935E300064A5E /* ServiceAssembly.swift in Sources */,
 				CC7A6FAD2D39363800064A5E /* UILabel.swift in Sources */,
 				CCB88AB02D3FDAD10098027A /* OnboardingCell.swift in Sources */,
 				CCB88AB52D3FDB400098027A /* ColorUtils.swift in Sources */,
 				CC7A6FA72D39362700064A5E /* CollectionView.swift in Sources */,
 				CCB88AAD2D3FD9600098027A /* OnboardingAssembly.swift in Sources */,
+				CCB88AD82D413E060098027A /* VideosAssembly.swift in Sources */,
+				CCB88ADA2D413E0E0098027A /* VideosRouter.swift in Sources */,
 				CCB88AAB2D3FD9580098027A /* OnboardingRouter.swift in Sources */,
 				CC7A6F992D3935D800064A5E /* ViewControllerFactory.swift in Sources */,
+				CCB88ABE2D412FDC0098027A /* PaymentRouter.swift in Sources */,
+				CCB88ABA2D412FCF0098027A /* PaymentViewController.swift in Sources */,
 				CC7A6F962D3935B800064A5E /* BaseRouter.swift in Sources */,
+				CCB88AD22D413D840098027A /* EffectsAssembly.swift in Sources */,
 				CC7A6F942D3935B000064A5E /* ReusableView.swift in Sources */,
 				CC7A6FAB2D39363200064A5E /* UIDevice.swift in Sources */,
 				CC7A6FB12D39364700064A5E /* String.swift in Sources */,
 				CC7A6F922D3935A800064A5E /* BaseViewController.swift in Sources */,
+				CCB88ABC2D412FD60098027A /* PaymentAssembly.swift in Sources */,
+				CCB88AD62D413E000098027A /* VideosViewController.swift in Sources */,
 				CC7A6FAF2D39363E00064A5E /* StackView.swift in Sources */,
 				CCB88AB72D3FDB450098027A /* Drawer.swift in Sources */,
+				CCB88ADC2D413EA20098027A /* TabBarViewController.swift in Sources */,
+				CCB88ACC2D413D6E0098027A /* GeneratorAssembly.swift in Sources */,
+				CCB88AC12D4130A40098027A /* IconLabelView.swift in Sources */,
+				CCB88AC42D4131150098027A /* PaymentButton.swift in Sources */,
 				CC7A6F532D3932D400064A5E /* SceneDelegate.swift in Sources */,
 				CC7A6F9E2D3935F700064A5E /* UntilOnboardingViewController.swift in Sources */,
+				CCB88ACA2D413D670098027A /* GeneratorViewController.swift in Sources */,
+				CCB88ACE2D413D750098027A /* GeneratorRouter.swift in Sources */,
 				CC7A6F902D39359F00064A5E /* Setupable.swift in Sources */,
+				CCB88AD42D413DF90098027A /* EffectsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

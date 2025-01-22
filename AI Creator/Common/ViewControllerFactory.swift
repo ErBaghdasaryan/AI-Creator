@@ -28,4 +28,42 @@ final class ViewControllerFactory {
         viewController.viewModel = assembler.resolver.resolve(IOnboardingViewModel.self)
         return viewController
     }
+
+    //MARK: Payment
+    static func makePaymentViewController() -> PaymentViewController {
+        let assembler = Assembler(commonAssemblies + [PaymentAssembly()])
+        let viewController = PaymentViewController()
+        viewController.viewModel = assembler.resolver.resolve(IPaymentViewModel.self)
+        return viewController
+    }
+
+    //MARK: - TabBar
+    static func makeTabBarViewController() -> TabBarViewController {
+        let viewController = TabBarViewController()
+        return viewController
+    }
+
+    //MARK: Generator
+    static func makeGeneratorViewController() -> GeneratorViewController {
+        let assembler = Assembler(commonAssemblies + [GeneratorAssembly()])
+        let viewController = GeneratorViewController()
+        viewController.viewModel = assembler.resolver.resolve(IGeneratorViewModel.self)
+        return viewController
+    }
+
+    //MARK: Effects
+    static func makeEffectsViewController() -> EffectsViewController {
+        let assembler = Assembler(commonAssemblies + [EffectsAssembly()])
+        let viewController = EffectsViewController()
+        viewController.viewModel = assembler.resolver.resolve(IEffectsViewModel.self)
+        return viewController
+    }
+
+    //MARK: Videos
+    static func makeVideosViewController() -> VideosViewController {
+        let assembler = Assembler(commonAssemblies + [VideosAssembly()])
+        let viewController = VideosViewController()
+        viewController.viewModel = assembler.resolver.resolve(IVideosViewModel.self)
+        return viewController
+    }
 }

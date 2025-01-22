@@ -82,7 +82,6 @@ class OnboardingViewController: BaseViewController, UICollectionViewDelegate {
     }
 
     func sizeForItem() -> CGSize {
-
         let width = self.view.frame.size.width
         let heightt = self.view.frame.size.height
         return CGSize(width: width, height: heightt)
@@ -196,7 +195,6 @@ extension OnboardingViewController: UICollectionViewDataSource, UICollectionView
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
         return sizeForItem()
     }
 }
