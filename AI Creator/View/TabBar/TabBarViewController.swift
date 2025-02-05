@@ -15,15 +15,15 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         lazy var generatorViewController = self.createNavigation(title: "Generator",
-                                                                 image: "generator",
+                                                                 image: "sparkles",
                                                                  vc: ViewControllerFactory.makeGeneratorViewController())
 
         lazy var effectsViewController = self.createNavigation(title: "Effects",
-                                                               image: "effects",
+                                                               image: "bolt.fill",
                                                                vc: ViewControllerFactory.makeEffectsViewController())
 
         lazy var videosViewController = self.createNavigation(title: "My Videos",
-                                                              image: "videos",
+                                                              image: "video.square",
                                                               vc: ViewControllerFactory.makeVideosViewController())
 
         self.setViewControllers([generatorViewController, effectsViewController, videosViewController], animated: true)
@@ -47,18 +47,22 @@ class TabBarViewController: UITabBarController {
     private func createNavigation(title: String, image: String, vc: UIViewController) -> UINavigationController {
         let navigation = UINavigationController(rootViewController: vc)
         self.tabBar.backgroundColor = UIColor.white.withAlphaComponent(0.2)
-        self.tabBar.barTintColor = UIColor.black
-
-        let unselectedImage = UIImage(named: image)?.withRenderingMode(.alwaysOriginal)
-        let selectedImage = UIImage(named: image)?.withTintColor(UIColor(hex: "#EEA272")!, renderingMode: .alwaysTemplate)
-
-        navigation.tabBarItem.image = unselectedImage
-        navigation.tabBarItem.selectedImage = selectedImage
-
-        navigation.tabBarItem.title = title
+        self.tabBar.barTintColor = UIColor(hex: "#EEA272")!
 
         let nonselectedTitleColor: UIColor = UIColor.white.withAlphaComponent(0.5)
         let selectedTitleColor: UIColor = UIColor(hex: "#EEA272")!
+
+        let unselectedImage = UIImage(systemName: image)?
+            .withRenderingMode(.alwaysOriginal)
+            .withTintColor(nonselectedTitleColor)
+
+        let selectedImage = UIImage(systemName: image)?
+            .withRenderingMode(.alwaysOriginal)
+            .withTintColor(selectedTitleColor)
+
+        navigation.tabBarItem.image = unselectedImage
+        navigation.tabBarItem.selectedImage = selectedImage
+        navigation.tabBarItem.title = title
 
         let normalAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: nonselectedTitleColor
@@ -67,8 +71,8 @@ class TabBarViewController: UITabBarController {
             .foregroundColor: selectedTitleColor
         ]
 
-        navigation.tabBarItem.setTitleTextAttributes(selectedAttributes, for: .selected)
         navigation.tabBarItem.setTitleTextAttributes(normalAttributes, for: .normal)
+        navigation.tabBarItem.setTitleTextAttributes(selectedAttributes, for: .selected)
 
         return navigation
     }

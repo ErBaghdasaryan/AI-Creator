@@ -59,9 +59,9 @@ final class PaymentViewController: BaseViewController {
     private let termsButton = UIButton(type: .system)
     private var bottomStack: UIStackView!
 
-//    private var currentProduct: ApphudProduct?
-//    public let paywallID = "main"
-//    public var productsAppHud: [ApphudProduct] = []
+    private var currentProduct: ApphudProduct?
+    public let paywallID = "main"
+    public var productsAppHud: [ApphudProduct] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -218,11 +218,11 @@ extension PaymentViewController {
         case yearlyButton:
             self.yearlyButton.isSelectedState = true
             self.weeklyButton.isSelectedState = false
-//            self.currentProduct = self.productsAppHud.first
+            self.currentProduct = self.productsAppHud.first
         case weeklyButton:
             self.yearlyButton.isSelectedState = false
             self.weeklyButton.isSelectedState = true
-//            self.currentProduct = self.productsAppHud[1]
+            self.currentProduct = self.productsAppHud[1]
         default:
             break
         }
@@ -247,23 +247,23 @@ extension PaymentViewController {
     }
 
     @objc func continueButtonTaped() {
-//        if let navigationController = self.navigationController {
-//            guard let currentProduct = self.currentProduct else { return }
-//
-//            startPurchase(product: currentProduct) { result in
-//                let viewControllers = navigationController.viewControllers
-//
-//                if let currentIndex = viewControllers.firstIndex(of: self), currentIndex > 0 {
-//                    let previousViewController = viewControllers[currentIndex - 1]
-//
-//                    if previousViewController is OnboardingViewController {
-//                        UntilOnboardingRouter.showTabBarViewController(in: navigationController)
-//                    } else {
-//                        UntilOnboardingRouter.popViewController(in: navigationController)
-//                    }
-//                }
-//            }
-//        }
+        if let navigationController = self.navigationController {
+            guard let currentProduct = self.currentProduct else { return }
+
+            startPurchase(product: currentProduct) { result in
+                let viewControllers = navigationController.viewControllers
+
+                if let currentIndex = viewControllers.firstIndex(of: self), currentIndex > 0 {
+                    let previousViewController = viewControllers[currentIndex - 1]
+
+                    if previousViewController is OnboardingViewController {
+                        UntilOnboardingRouter.showTabBarViewController(in: navigationController)
+                    } else {
+                        UntilOnboardingRouter.popViewController(in: navigationController)
+                    }
+                }
+            }
+        }
     }
 
     @objc func restore() {
@@ -324,14 +324,14 @@ extension PaymentViewController {
 
     @MainActor
     public func loadPaywalls() {
-//        Apphud.paywallsDidLoadCallback { paywalls, arg in
-//            if let paywall = paywalls.first(where: { $0.identifier == self.paywallID }) {
-//                Apphud.paywallShown(paywall)
-//
-//                let products = paywall.products
-//                self.productsAppHud = products
-//            }
-//        }
+        Apphud.paywallsDidLoadCallback { paywalls, arg in
+            if let paywall = paywalls.first(where: { $0.identifier == self.paywallID }) {
+                Apphud.paywallShown(paywall)
+
+                let products = paywall.products
+                self.productsAppHud = products
+            }
+        }
     }
 }
 

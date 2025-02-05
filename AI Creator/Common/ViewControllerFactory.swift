@@ -66,4 +66,18 @@ final class ViewControllerFactory {
         viewController.viewModel = assembler.resolver.resolve(IVideosViewModel.self)
         return viewController
     }
+
+    //MARK: Settings
+    static func makeSettingsViewController() -> SettingsViewController {
+        let assembler = Assembler(commonAssemblies + [SettingsAssembly()])
+        let viewController = SettingsViewController()
+        viewController.viewModel = assembler.resolver.resolve(ISettingsViewModel.self)
+        return viewController
+    }
+
+    //MARK: Usage
+    static func makeUsageViewController() -> UsageViewController {
+        let viewController = UsageViewController()
+        return viewController
+    }
 }

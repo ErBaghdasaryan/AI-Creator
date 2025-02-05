@@ -64,6 +64,15 @@
 		CCB88AD82D413E060098027A /* VideosAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AD72D413E020098027A /* VideosAssembly.swift */; };
 		CCB88ADA2D413E0E0098027A /* VideosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AD92D413E080098027A /* VideosRouter.swift */; };
 		CCB88ADC2D413EA20098027A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88ADB2D413E9C0098027A /* TabBarViewController.swift */; };
+		CCB88AEE2D43AEA00098027A /* TextWImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AED2D43AE9B0098027A /* TextWImage.swift */; };
+		CCB88AF32D43B69D0098027A /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AF22D43B6980098027A /* CustomTextView.swift */; };
+		CCB88AF62D43B70D0098027A /* TextToVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AF52D43B7040098027A /* TextToVideoView.swift */; };
+		CCB88AF82D43BB3B0098027A /* ImageToVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AF72D43BB320098027A /* ImageToVideoView.swift */; };
+		CCB88AFB2D4940CB0098027A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AFA2D4940C60098027A /* SettingsViewController.swift */; };
+		CCB88AFD2D4940D30098027A /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AFC2D4940CD0098027A /* SettingsAssembly.swift */; };
+		CCB88AFF2D4940D90098027A /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88AFE2D4940D50098027A /* SettingsRouter.swift */; };
+		CCB88B022D49469F0098027A /* UsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB88B012D49469C0098027A /* UsageViewController.swift */; };
+		CCB88B042D4A23010098027A /* App_AICreator.storekit in Resources */ = {isa = PBXBuildFile; fileRef = CCB88B032D4A23010098027A /* App_AICreator.storekit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +128,15 @@
 		CCB88AD72D413E020098027A /* VideosAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosAssembly.swift; sourceTree = "<group>"; };
 		CCB88AD92D413E080098027A /* VideosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosRouter.swift; sourceTree = "<group>"; };
 		CCB88ADB2D413E9C0098027A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CCB88AED2D43AE9B0098027A /* TextWImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWImage.swift; sourceTree = "<group>"; };
+		CCB88AF22D43B6980098027A /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		CCB88AF52D43B7040098027A /* TextToVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToVideoView.swift; sourceTree = "<group>"; };
+		CCB88AF72D43BB320098027A /* ImageToVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageToVideoView.swift; sourceTree = "<group>"; };
+		CCB88AFA2D4940C60098027A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CCB88AFC2D4940CD0098027A /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		CCB88AFE2D4940D50098027A /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		CCB88B012D49469C0098027A /* UsageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageViewController.swift; sourceTree = "<group>"; };
+		CCB88B032D4A23010098027A /* App_AICreator.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = App_AICreator.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +162,7 @@
 		CC7A6F442D3932D400064A5E = {
 			isa = PBXGroup;
 			children = (
+				CCB88B032D4A23010098027A /* App_AICreator.storekit */,
 				CC7A6F6B2D3933D700064A5E /* AICreatorViewModel */,
 				CC7A6F6A2D3933C700064A5E /* AICreatorModel */,
 				CC7A6F4F2D3932D400064A5E /* AI Creator */,
@@ -200,6 +219,7 @@
 		CC7A6F662D39338100064A5E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCB88AF92D4940C20098027A /* Settings */,
 				CCB88AC82D413D5A0098027A /* Videos */,
 				CCB88AC72D413D550098027A /* Effects */,
 				CCB88AC62D413D4F0098027A /* Generator */,
@@ -238,6 +258,9 @@
 		CC7A6F692D39339100064A5E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CCB88AF42D43B6FA0098027A /* GeneratorViews */,
+				CCB88AEF2D43B68A0098027A /* SystemView */,
+				CCB88AEC2D43AE930098027A /* Button */,
 				CCB88AC22D41310C0098027A /* Payment */,
 				CCB88ABF2D41309C0098027A /* IconLabel */,
 				CCB88AB12D3FDB220098027A /* PageControl */,
@@ -375,6 +398,50 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
+		CCB88AEC2D43AE930098027A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AED2D43AE9B0098027A /* TextWImage.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		CCB88AEF2D43B68A0098027A /* SystemView */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AF22D43B6980098027A /* CustomTextView.swift */,
+			);
+			path = SystemView;
+			sourceTree = "<group>";
+		};
+		CCB88AF42D43B6FA0098027A /* GeneratorViews */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88AF52D43B7040098027A /* TextToVideoView.swift */,
+				CCB88AF72D43BB320098027A /* ImageToVideoView.swift */,
+			);
+			path = GeneratorViews;
+			sourceTree = "<group>";
+		};
+		CCB88AF92D4940C20098027A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88B002D4946980098027A /* Usage */,
+				CCB88AFA2D4940C60098027A /* SettingsViewController.swift */,
+				CCB88AFC2D4940CD0098027A /* SettingsAssembly.swift */,
+				CCB88AFE2D4940D50098027A /* SettingsRouter.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CCB88B002D4946980098027A /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				CCB88B012D49469C0098027A /* UsageViewController.swift */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,6 +522,7 @@
 				CC7A6FBA2D39378600064A5E /* SF-Pro-Text-Semibold.otf in Resources */,
 				CC7A6FBD2D39378600064A5E /* SF-Pro-Text-Bold.otf in Resources */,
 				CC7A6FB92D39378600064A5E /* SF-Pro-Text-Regular.otf in Resources */,
+				CCB88B042D4A23010098027A /* App_AICreator.storekit in Resources */,
 				CC7A6FBC2D39378600064A5E /* SF-Pro-Text-Medium.otf in Resources */,
 				CC7A6F5A2D3932D800064A5E /* Assets.xcassets in Resources */,
 				CC7A6F5D2D3932D800064A5E /* Base in Resources */,
@@ -469,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB88AF82D43BB3B0098027A /* ImageToVideoView.swift in Sources */,
 				CC7A6FA02D3935FF00064A5E /* UntilOnboardingRouter.swift in Sources */,
 				CC7A6FA92D39362B00064A5E /* UIColor.swift in Sources */,
 				CCB88AA92D3FD9420098027A /* OnboardingViewController.swift in Sources */,
@@ -483,10 +552,13 @@
 				CCB88AB02D3FDAD10098027A /* OnboardingCell.swift in Sources */,
 				CCB88AB52D3FDB400098027A /* ColorUtils.swift in Sources */,
 				CC7A6FA72D39362700064A5E /* CollectionView.swift in Sources */,
+				CCB88AFB2D4940CB0098027A /* SettingsViewController.swift in Sources */,
 				CCB88AAD2D3FD9600098027A /* OnboardingAssembly.swift in Sources */,
 				CCB88AD82D413E060098027A /* VideosAssembly.swift in Sources */,
 				CCB88ADA2D413E0E0098027A /* VideosRouter.swift in Sources */,
+				CCB88B022D49469F0098027A /* UsageViewController.swift in Sources */,
 				CCB88AAB2D3FD9580098027A /* OnboardingRouter.swift in Sources */,
+				CCB88AEE2D43AEA00098027A /* TextWImage.swift in Sources */,
 				CC7A6F992D3935D800064A5E /* ViewControllerFactory.swift in Sources */,
 				CCB88ABE2D412FDC0098027A /* PaymentRouter.swift in Sources */,
 				CCB88ABA2D412FCF0098027A /* PaymentViewController.swift in Sources */,
@@ -499,16 +571,20 @@
 				CCB88ABC2D412FD60098027A /* PaymentAssembly.swift in Sources */,
 				CCB88AD62D413E000098027A /* VideosViewController.swift in Sources */,
 				CC7A6FAF2D39363E00064A5E /* StackView.swift in Sources */,
+				CCB88AFF2D4940D90098027A /* SettingsRouter.swift in Sources */,
 				CCB88AB72D3FDB450098027A /* Drawer.swift in Sources */,
+				CCB88AFD2D4940D30098027A /* SettingsAssembly.swift in Sources */,
 				CCB88ADC2D413EA20098027A /* TabBarViewController.swift in Sources */,
 				CCB88ACC2D413D6E0098027A /* GeneratorAssembly.swift in Sources */,
 				CCB88AC12D4130A40098027A /* IconLabelView.swift in Sources */,
 				CCB88AC42D4131150098027A /* PaymentButton.swift in Sources */,
 				CC7A6F532D3932D400064A5E /* SceneDelegate.swift in Sources */,
+				CCB88AF32D43B69D0098027A /* CustomTextView.swift in Sources */,
 				CC7A6F9E2D3935F700064A5E /* UntilOnboardingViewController.swift in Sources */,
 				CCB88ACA2D413D670098027A /* GeneratorViewController.swift in Sources */,
 				CCB88ACE2D413D750098027A /* GeneratorRouter.swift in Sources */,
 				CC7A6F902D39359F00064A5E /* Setupable.swift in Sources */,
+				CCB88AF62D43B70D0098027A /* TextToVideoView.swift in Sources */,
 				CCB88AD42D413DF90098027A /* EffectsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,11 +732,11 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI Creator/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "AI Creator";
+				INFOPLIST_KEY_CFBundleDisplayName = "SeaArt AI";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -675,7 +751,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -689,11 +765,11 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI Creator/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "AI Creator";
+				INFOPLIST_KEY_CFBundleDisplayName = "SeaArt AI";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -708,7 +784,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

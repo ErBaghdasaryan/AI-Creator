@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import ApphudSDK
+import AICreatorViewModel
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let appStorageService = AppStorageService()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        Apphud.start(apiKey: "app_LU4DsfPj9sGxEb9VoW6Boe2QR37c52")
+        Apphud.setDeviceIdentifiers(idfa: nil, idfv: UIDevice.current.identifierForVendor?.uuidString)
+
+        let appHudUserId = Apphud.userID()
+        self.appStorageService.saveData(key: .apphudUserID, value: appHudUserId)
+
         return true
     }
 
